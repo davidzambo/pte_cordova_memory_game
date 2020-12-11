@@ -57,7 +57,7 @@ class Game {
 
 class CardPackUtil {
     static randomizePack(cards) {
-        return cards.concat(cards).sort((a, b) => 0.5 - Math.random())
+        return cards.sort((a, b) => 0.5 - Math.random())
     }
 }
 
@@ -157,7 +157,6 @@ class CardLayout {
             self.setIsClickListenersEnabled(true);
         }, 700);
     }
-
 
     setIsClickListenersEnabled(status) {
         this.isClickListenersEnabled = status;
